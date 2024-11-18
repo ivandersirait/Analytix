@@ -418,3 +418,30 @@ body {
     white-space: nowrap;
     overflow: hidden;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-members {
+        justify-content: center;
+        gap: 20px; /* Reduced gap for smaller screens */
+    }
+
+    .team-member {
+        width: 45%; /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-members {
+        gap: 15px; /* Reduced gap for mobile devices */
+    }
+
+    .team-member {
+        width: 100%; /* Stack team members in a single column on small screens */
+    }
+
+    .team-member img {
+        width: 200px; /* Adjust image size on mobile */
+        height: 200px;
+    }
+}
