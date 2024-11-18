@@ -64,7 +64,9 @@
 
     <!-- Success Statement Section -->
     <section class="success-statement">
-        <p id="typing-text"></p>
+        <p id="typing-text" aria-label="dynamic typing text">
+            <!-- Dynamic typing effect will append here -->
+        </p>
     </section>
 
     <!-- Project Section -->
@@ -161,7 +163,7 @@
     <script src="slider.js"></script>
     <script>
         // Typing effect
-        const text = "We’re committed to your success, and payment will only be made through the cost savings you achieve";
+        const text = "Payment made only through cost savings.";
         let index = 0;
         const typingTextElement = document.getElementById("typing-text");
 
