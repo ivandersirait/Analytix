@@ -391,7 +391,7 @@ body {
 .Process-item img {
     width: 80%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
