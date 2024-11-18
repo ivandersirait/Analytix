@@ -361,41 +361,59 @@ body {
 /* Our Team Section */
 .team {
     padding: 50px 20px;
+    background: #f7f9fc;
     text-align: center;
-    background: #fff;
 }
 
 .team h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #333;
 }
 
-.team-members {
+.Process-container {
     display: flex;
     justify-content: center;
-    gap: 125px;
-    transition: transform 1s ease;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.team-members:hover {
-    transform: translateY(-10px);
-}
-
-.team-member {
+.Process-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-member img {
+.Process-item img {
     width: 80%;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
 }
 
-.team-member:hover img {
-    transform: scale(1.1);
+.Process-item h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.Process-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.Process-item .role {
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.Process-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .linkedin-icon {
@@ -405,6 +423,11 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+
+.linkedin-icon:hover {
+    color: #005582;
+}
+
 
 .linkedin-icon:hover {
     color: #005582;
